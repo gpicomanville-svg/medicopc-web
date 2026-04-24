@@ -5,12 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MedicoPC — El médico de tu ordenador · Madrid</title>
 <meta name="description" content="Servicio técnico informático profesional en Madrid. Diagnóstico, reparación, formateo, recuperación de datos. Garantía escrita 30 días.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b0b12'/%3E%3Cpath d='M13 6h6v7h7v6h-7v7h-6v-7H6v-6h7z' fill='%23e8185a'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{--bg:#0b0b12;--bg-soft:#121228;--border:rgba(255,255,255,0.08);--border-hi:rgba(255,255,255,0.18);--rosa:#e8185a;--rosa-glow:rgba(232,24,90,0.5);--azul:#5082ff;--verde:#00c882;--amber:#f0b43c;--rojo:#ff3b3b;--texto:#ffffff;--texto-dim:#aab0c6;--texto-muy-dim:#6a7090}
@@ -898,7 +899,7 @@ la gráfica es tu motor.
 </div>
 </div>
 <div>
-<form class="contacto-form" id="mainForm" action="mailto:hola@medicopc.es" method="POST" enctype="text/plain">
+<form class="contacto-form" id="mainForm" onsubmit="event.preventDefault();return false;">
 <div class="form-row">
 <div class="form-field"><label>Nombre</label><input type="text" name="nombre" id="in_nombre" required placeholder="Tu nombre"></div>
 <div class="form-field"><label>Teléfono</label><input type="tel" name="telefono" id="in_telefono" required placeholder="+34 6XX XXX XXX"></div>
