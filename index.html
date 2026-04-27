@@ -241,6 +241,23 @@ nav.solid{background:rgba(11,11,18,0.9);backdrop-filter:blur(24px);border-bottom
 .tarifa-list .name{color:var(--texto-dim)}
 .tarifa-list .price{color:var(--texto);font-weight:600;font-family:'Lora',serif}
 .tarifa-list .price.highlight{color:var(--rosa)}
+.tarifa-list li{align-items:flex-start;gap:12px}
+.tarifa-list .name{flex:1}
+.tarifa-list .price{white-space:nowrap;flex-shrink:0;text-align:right}
+.tarifa-foot{font-size:11px;color:var(--texto-muy-dim);line-height:1.5;margin:-8px 0 18px;font-style:italic}
+.badge-soon{display:inline-block;font-size:10px;font-weight:700;letter-spacing:2px;color:var(--azul);background:rgba(80,130,255,0.12);border:1px solid rgba(80,130,255,0.4);padding:5px 12px;border-radius:4px;margin-bottom:14px;text-transform:uppercase}
+.modalidad-grid{max-width:1200px;margin:60px auto 0;display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:center}
+@media(max-width:900px){.modalidad-grid{grid-template-columns:1fr;gap:32px}}
+.modalidad-list{list-style:none;display:flex;flex-direction:column;gap:20px;padding:0}
+.modalidad-list li{display:flex;gap:14px;align-items:flex-start}
+.modalidad-icon{flex-shrink:0;width:38px;height:38px;background:rgba(232,24,90,0.12);border:1px solid rgba(232,24,90,0.3);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px}
+.modalidad-text{font-size:14px;color:var(--texto-dim);line-height:1.6}
+.modalidad-text strong{color:var(--texto);display:block;font-family:'Lora',serif;font-size:15px;margin-bottom:3px;font-weight:700}
+.lead-form{display:flex;gap:10px;max-width:480px;margin:24px 0 0;flex-wrap:wrap}
+.lead-form input{flex:1;min-width:200px;background:var(--bg-soft);border:1px solid var(--border);border-radius:100px;padding:14px 22px;font-size:14px;color:var(--texto);font-family:inherit;outline:none;transition:border-color 0.2s}
+.lead-form input:focus{border-color:var(--rosa)}
+.lead-form button{background:var(--rosa);color:white;border:none;border-radius:100px;padding:14px 28px;font-size:14px;font-weight:600;cursor:pointer;font-family:inherit;white-space:nowrap;transition:transform 0.2s,box-shadow 0.2s;box-shadow:0 4px 20px var(--rosa-glow)}
+.lead-form button:hover{transform:translateY(-2px);box-shadow:0 8px 30px var(--rosa-glow)}
 #contacto{padding:120px 6%;background:linear-gradient(180deg,transparent,var(--bg-soft))}
 .contacto-head{text-align:center;max-width:800px;margin:0 auto 60px}
 .contacto-head .eyebrow{margin-inline:auto}
@@ -562,30 +579,35 @@ DESCUBRE EL DIAGNÓSTICO
 
 <!-- Banda de confianza entre Diagnóstico y Tratamientos -->
 <section style="padding:60px 6%;background:linear-gradient(180deg,transparent,rgba(232,24,90,0.04),transparent);">
-<div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;" class="trust-grid">
-<div style="text-align:center;padding:24px 16px;background:var(--bg-soft);border:1px solid var(--border);border-radius:14px;">
-<div style="font-size:32px;margin-bottom:10px;">🏥</div>
-<div style="font-family:'Lora',serif;font-size:16px;font-weight:700;margin-bottom:4px;">A domicilio</div>
-<div style="font-size:12px;color:var(--texto-dim);">Vamos a tu casa u oficina. Madrid y alrededores.</div>
+<div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr);gap:18px;" class="trust-grid">
+<div style="text-align:center;padding:24px 14px;background:var(--bg-soft);border:1px solid var(--border);border-radius:14px;">
+<div style="font-size:32px;margin-bottom:10px;">🩺</div>
+<div style="font-family:'Lora',serif;font-size:15px;font-weight:700;margin-bottom:4px;">Diagnóstico gratuito</div>
+<div style="font-size:12px;color:var(--texto-dim);">Sin compromiso. Solo cobramos si reparamos.</div>
 </div>
-<div style="text-align:center;padding:24px 16px;background:var(--bg-soft);border:1px solid var(--border);border-radius:14px;">
+<div style="text-align:center;padding:24px 14px;background:var(--bg-soft);border:1px solid var(--border);border-radius:14px;">
+<div style="font-size:32px;margin-bottom:10px;">📍</div>
+<div style="font-family:'Lora',serif;font-size:15px;font-weight:700;margin-bottom:4px;">Madrid capital sin recargo</div>
+<div style="font-size:12px;color:var(--texto-dim);">Recogida y entrega incluidas en el precio.</div>
+</div>
+<div style="text-align:center;padding:24px 14px;background:var(--bg-soft);border:1px solid var(--border);border-radius:14px;">
 <div style="font-size:32px;margin-bottom:10px;">💰</div>
-<div style="font-family:'Lora',serif;font-size:16px;font-weight:700;margin-bottom:4px;">Precio cerrado</div>
+<div style="font-family:'Lora',serif;font-size:15px;font-weight:700;margin-bottom:4px;">Precio cerrado</div>
 <div style="font-size:12px;color:var(--texto-dim);">Presupuesto antes de tocar. Sin sorpresas.</div>
 </div>
-<div style="text-align:center;padding:24px 16px;background:var(--bg-soft);border:1px solid var(--border);border-radius:14px;">
+<div style="text-align:center;padding:24px 14px;background:var(--bg-soft);border:1px solid var(--border);border-radius:14px;">
 <div style="font-size:32px;margin-bottom:10px;">🛡️</div>
-<div style="font-family:'Lora',serif;font-size:16px;font-weight:700;margin-bottom:4px;">Garantía escrita</div>
+<div style="font-family:'Lora',serif;font-size:15px;font-weight:700;margin-bottom:4px;">Garantía escrita</div>
 <div style="font-size:12px;color:var(--texto-dim);">30 días. Por escrito. Sin letra pequeña.</div>
 </div>
-<div style="text-align:center;padding:24px 16px;background:var(--bg-soft);border:1px solid var(--border);border-radius:14px;">
-<div style="font-size:32px;margin-bottom:10px;">✅</div>
-<div style="font-family:'Lora',serif;font-size:16px;font-weight:700;margin-bottom:4px;">Si no va, no pagas</div>
-<div style="font-size:12px;color:var(--texto-dim);">Si no lo arreglamos, no cobramos. Tan simple.</div>
+<div style="text-align:center;padding:24px 14px;background:var(--bg-soft);border:1px solid var(--border);border-radius:14px;">
+<div style="font-size:32px;margin-bottom:10px;">🏠</div>
+<div style="font-family:'Lora',serif;font-size:15px;font-weight:700;margin-bottom:4px;">Taller o domicilio</div>
+<div style="font-size:12px;color:var(--texto-dim);">Tú eliges la modalidad cuando pides cita.</div>
 </div>
 </div>
 </section>
-<style>@media(max-width:900px){.trust-grid{grid-template-columns:1fr 1fr !important}}@media(max-width:500px){.trust-grid{grid-template-columns:1fr !important}}</style>
+<style>@media(max-width:1100px){.trust-grid{grid-template-columns:repeat(3,1fr) !important}}@media(max-width:700px){.trust-grid{grid-template-columns:1fr 1fr !important}}@media(max-width:480px){.trust-grid{grid-template-columns:1fr !important}}</style>
 
 <section id="tratamientos">
 <div class="section-head">
@@ -594,21 +616,58 @@ DESCUBRE EL DIAGNÓSTICO
 <p class="lead">Precios fijos. Sin sorpresas. Sin letra pequeña.</p>
 </div>
 <div class="services-grid">
-<div class="service-card"><div class="service-icon">🔍</div><div class="service-name">Intervención Básica</div><div class="service-desc">Diagnóstico completo, limpieza software, optimización, antivirus.</div><div class="service-meta"><div class="meta-row"><span class="ico">⏱</span><span><strong>1-2h</strong> en tu casa</span></div><div class="service-includes">Incluye</div><ul class="service-bullets"><li>Diagnóstico de 42 puntos</li><li>Eliminación de malware</li><li>Optimización del arranque</li></ul></div><div class="service-footer"><div class="service-price">59€</div><div class="service-guarantee">✓ Garantía 30d</div></div></div>
-<div class="service-card"><div class="service-badge">Más elegido</div><div class="service-icon">🔧</div><div class="service-name">Intervención Completa</div><div class="service-desc">Todo lo anterior + apertura del equipo y limpieza profunda interna.</div><div class="service-meta"><div class="meta-row"><span class="ico">⏱</span><span><strong>2-3h</strong> en tu casa</span></div><div class="service-includes">Incluye</div><ul class="service-bullets"><li>Todo lo de Básica</li><li>Apertura + limpieza física</li><li>Pasta térmica CPU renovada</li><li>Chequeo hardware completo</li></ul></div><div class="service-footer"><div class="service-price">89€</div><div class="service-guarantee">✓ Garantía 30d</div></div></div>
-<div class="service-card"><div class="service-icon">💿</div><div class="service-name">Formateo</div><div class="service-desc">Instalación limpia de Windows con drivers y programas esenciales.</div><div class="service-meta"><div class="meta-row"><span class="ico">⏱</span><span><strong>2-4h</strong> según equipo</span></div><div class="service-includes">Incluye</div><ul class="service-bullets"><li>Windows 10/11 limpio</li><li>Drivers + actualizaciones</li><li>Chrome, VLC, antivirus</li><li>Migración datos opcional</li></ul></div><div class="service-footer"><div class="service-price">59€<span class="unit">desde</span></div><div class="service-guarantee">✓ Garantía 30d</div></div></div>
-<div class="service-card"><div class="service-badge verde">Diagnóstico gratis</div><div class="service-icon">💾</div><div class="service-name">Recuperación de datos</div><div class="service-desc">Archivos borrados, disco que no monta, particiones perdidas.</div><div class="service-meta"><div class="meta-row"><span class="ico">⏱</span><span><strong>24-72h</strong> según caso</span></div><div class="service-includes">Incluye</div><ul class="service-bullets"><li>Diagnóstico previo gratuito</li><li>Nivel 1 (lógico): desde 110€</li><li>Nivel 2 (hardware): desde 250€</li><li>Si no se puede, no se cobra</li></ul></div><div class="service-footer"><div class="service-price">110€<span class="unit">desde</span></div><div class="service-guarantee">✓ Garantía escrita</div></div></div>
-<div class="service-card"><div class="service-badge amber">Mejor relación</div><div class="service-icon">⚙️</div><div class="service-name">Instalación SSD o RAM</div><div class="service-desc">La mejora más rentable para darle vida nueva a tu equipo.</div><div class="service-meta"><div class="meta-row"><span class="ico">⏱</span><span><strong>45min-1h</strong></span></div><div class="service-includes">Incluye</div><ul class="service-bullets"><li>Instalación mano de obra</li><li>Clonación del disco viejo</li><li>Test de estabilidad</li><li>Pieza aparte</li></ul></div><div class="service-footer"><div class="service-price">30€<span class="unit">m.o.</span></div><div class="service-guarantee">✓ Garantía 30d</div></div></div>
-<div class="service-card"><div class="service-badge verde">Ahorra 17€</div><div class="service-icon">📦</div><div class="service-name">Pack 3 PCs</div><div class="service-desc">3 intervenciones básicas en una sola visita. Ideal para familias.</div><div class="service-meta"><div class="meta-row"><span class="ico">⏱</span><span><strong>3-4h</strong> en una visita</span></div><div class="service-includes">Incluye</div><ul class="service-bullets"><li>3 × Intervención Básica</li><li>Un solo desplazamiento</li><li>Diagnóstico conjunto</li><li>Informe unificado</li></ul></div><div class="service-footer"><div class="service-price">160€</div><div class="service-guarantee">✓ Garantía 30d</div></div></div>
+<div class="service-card"><div class="service-icon">🔍</div><div class="service-name">Limpieza Básica</div><div class="service-desc">Limpieza software + exterior. Optimización arranque, antivirus, eliminación bloatware.</div><div class="service-meta"><div class="meta-row"><span class="ico">⏱</span><span><strong>1h</strong></span></div><div class="service-includes">Incluye</div><ul class="service-bullets"><li>Limpieza software completa</li><li>Eliminación de malware</li><li>Optimización del arranque</li></ul></div><div class="service-footer"><div class="service-price">60€</div><div class="service-guarantee">✓ Garantía 30d</div></div></div>
+<div class="service-card"><div class="service-badge">Más elegido</div><div class="service-icon">🔧</div><div class="service-name">Limpieza Completa</div><div class="service-desc">Software + apertura física + pasta térmica + pads. La que más vendemos.</div><div class="service-meta"><div class="meta-row"><span class="ico">⏱</span><span><strong>1h 30min</strong></span></div><div class="service-includes">Incluye</div><ul class="service-bullets"><li>Todo lo de Limpieza Básica</li><li>Apertura + limpieza física</li><li>Pasta térmica + pads renovados</li><li>Chequeo hardware completo</li></ul></div><div class="service-footer"><div class="service-price">80€</div><div class="service-guarantee">✓ Garantía 30d</div></div></div>
+<div class="service-card"><div class="service-icon">💿</div><div class="service-name">Formateo + Backup</div><div class="service-desc">Instalación limpia de Windows con backup completo y restauración de datos.</div><div class="service-meta"><div class="meta-row"><span class="ico">⏱</span><span><strong>3h</strong> (rango 2-5h)</span></div><div class="service-includes">Incluye</div><ul class="service-bullets"><li>Windows 10/11 limpio + drivers</li><li>Backup completo previo</li><li>Restauración archivos personales</li><li>Apps esenciales preinstaladas</li></ul></div><div class="service-footer"><div class="service-price">80€</div><div class="service-guarantee">✓ Garantía 30d</div></div></div>
+<div class="service-card"><div class="service-badge verde">Diagnóstico gratis</div><div class="service-icon">💾</div><div class="service-name">Recuperación de datos</div><div class="service-desc">Archivos borrados, disco que no monta, particiones perdidas.</div><div class="service-meta"><div class="meta-row"><span class="ico">⏱</span><span><strong>24-72h</strong> según caso</span></div><div class="service-includes">Incluye</div><ul class="service-bullets"><li>Diagnóstico previo gratuito</li><li>Nivel 1 (lógico): 130€</li><li>Nivel 2 (laboratorio): 350-800€ + 60€ gestión</li><li>Si no se puede, no se cobra</li></ul></div><div class="service-footer"><div class="service-price">130€<span class="unit">desde</span></div><div class="service-guarantee">✓ Garantía escrita</div></div></div>
+<div class="service-card"><div class="service-badge amber">Mejor relación</div><div class="service-icon">⚙️</div><div class="service-name">Instalación SSD / RAM / disco</div><div class="service-desc">La mejora más rentable para darle vida nueva a tu equipo.</div><div class="service-meta"><div class="meta-row"><span class="ico">⏱</span><span><strong>20-30min</strong></span></div><div class="service-includes">Incluye</div><ul class="service-bullets"><li>Mano de obra instalación</li><li>Clonado opcional 50€</li><li>Test de estabilidad</li><li>Pieza aparte (catálogo Tarifas)</li></ul></div><div class="service-footer"><div class="service-price">30€<span class="unit">m.o.</span></div><div class="service-guarantee">✓ Garantía 30d</div></div></div>
+<div class="service-card"><div class="service-badge verde">Pack completo</div><div class="service-icon">🛟</div><div class="service-name">Pack Rescate</div><div class="service-desc">Cuando todo sale mal. Diagnóstico + Recup N1 + Formateo + Backup en una visita.</div><div class="service-meta"><div class="meta-row"><span class="ico">⏱</span><span><strong>4h</strong></span></div><div class="service-includes">Incluye</div><ul class="service-bullets"><li>Diagnóstico completo</li><li>Recuperación Nivel 1</li><li>Formateo limpio</li><li>Backup + restauración</li></ul></div><div class="service-footer"><div class="service-price">200€</div><div class="service-guarantee">✓ Garantía 30d</div></div></div>
 </div>
 </section>
+<section id="modalidad" style="padding:90px 6%;background:linear-gradient(180deg,transparent,rgba(80,130,255,0.04),transparent);">
+<div style="max-width:1200px;margin:0 auto;">
+<div class="section-head">
+<div class="eyebrow"><span class="pulse"></span>Cómo trabajamos</div>
+<h2 class="h-lg">Taller, casa o <span class="accent">los dos</span>.<br>Tú eliges la modalidad.</h2>
+</div>
+<div class="modalidad-grid">
+<div>
+<ul class="modalidad-list">
+<li><div class="modalidad-icon">🔧</div><div class="modalidad-text"><strong>Trabajo en taller (mi local) o en tu casa.</strong>Tú decides al pedir cita. Sin diferencia técnica, solo logística.</div></li>
+<li><div class="modalidad-icon">📦</div><div class="modalidad-text"><strong>Recogida y entrega Madrid capital incluidas.</strong>Si dejas el equipo en taller, lo recojo y te lo devuelvo sin coste extra.</div></li>
+<li><div class="modalidad-icon">👨‍🔧</div><div class="modalidad-text"><strong>¿Prefieres que trabaje en tu casa? +25€.</strong>Solo si quieres ver el proceso entero o que el equipo no salga de tu domicilio.</div></li>
+<li><div class="modalidad-icon">🩺</div><div class="modalidad-text"><strong>Diagnóstico inicial siempre gratuito a domicilio.</strong>Te visito sin compromiso. Si tras la visita no se acepta presupuesto: 25€ por desplazamiento.</div></li>
+</ul>
+</div>
+<div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+<div style="background:var(--bg-soft);border:1px solid var(--border);border-radius:20px;padding:32px 22px;text-align:center;">
+<div style="font-size:48px;margin-bottom:14px;">🔧</div>
+<div style="font-family:'Lora',serif;font-size:18px;font-weight:700;margin-bottom:8px;">Taller</div>
+<div style="font-size:12px;color:var(--texto-dim);line-height:1.55;">Por defecto.<br>Mismo precio.<br>Recogida + entrega incluida.</div>
+</div>
+<div style="background:var(--bg-soft);border:1px solid rgba(232,24,90,0.4);border-radius:20px;padding:32px 22px;text-align:center;">
+<div style="font-size:48px;margin-bottom:14px;">🏠</div>
+<div style="font-family:'Lora',serif;font-size:18px;font-weight:700;margin-bottom:8px;">Domicilio</div>
+<div style="font-size:12px;color:var(--texto-dim);line-height:1.55;"><span style="color:var(--rosa);font-weight:600;">+25€</span><br>El técnico va a tu casa.<br>Trabajamos in-situ.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
 <section id="pymes">
 <div class="pymes-hero">
 <div>
+<div class="badge-soon">Próximamente · Julio 2026</div>
 <div class="eyebrow"><span class="pulse"></span>Para empresas</div>
 <h2 class="h-lg">Tu IT <span class="accent">siempre operativa</span>.<br>Sin facturas sorpresa.</h2>
-<p class="lead">Mantenimiento mensual para pymes en Madrid. Monitoreo 24/7, soporte remoto ilimitado, prevención de incidencias y visitas presenciales incluidas.</p>
-<a href="#pymes-cta" class="btn-primary">Auditoría gratuita · 175€ descontables <span>→</span></a>
+<p class="lead">Mantenimiento mensual para pymes en Madrid: monitoreo 24/7, soporte remoto ilimitado, prevención de incidencias y visitas presenciales incluidas. <strong>Servicio disponible desde el 1 de julio de 2026</strong>. Déjanos tu email y te avisamos cuando arranque.</p>
+<form class="lead-form" onsubmit="event.preventDefault();const e=this.email.value;window.location.href='mailto:hola@medicopc.es?subject='+encodeURIComponent('Avísame cuando arranque · Pymes MSP')+'&body='+encodeURIComponent('Hola,\n\nQuiero que me aviséis cuando arranque la oferta de mantenimiento para pymes.\n\nMi email: '+e+'\n\nGracias.');">
+<input name="email" type="email" placeholder="tu@email.com" required>
+<button type="submit">Avísame por email</button>
+</form>
 <div class="pymes-stats">
 <div class="pyme-stat"><div class="num">&lt;2h</div><div class="lbl">Respuesta incidencias</div></div>
 <div class="pyme-stat"><div class="num">24/7</div><div class="lbl">Monitoreo activo</div></div>
@@ -644,9 +703,9 @@ DESCUBRE EL DIAGNÓSTICO
 </div>
 </div>
 <div class="pymes-plans">
-<div class="plan-card"><div class="plan-tier">Starter</div><div class="plan-name">1-5 PCs</div><div class="plan-subtitle">Micro empresa o despacho</div><div class="plan-price">35€<span class="unit">/PC/mes</span></div><div class="plan-sla">SLA: Respuesta &lt; 4h</div><ul class="plan-features"><li>Monitoreo 24/7 automático</li><li>Soporte remoto ilimitado</li><li>Antivirus empresarial incluido</li><li>1 visita presencial/trimestre</li><li>Backup cloud básico</li><li>Informe mensual de estado</li></ul><a href="#pymes-cta" class="btn-primary" style="width:100%;justify-content:center;">Solicitar auditoría</a></div>
-<div class="plan-card featured"><div class="plan-tier">Business</div><div class="plan-name">6-10 PCs</div><div class="plan-subtitle">Pyme consolidada</div><div class="plan-price">30€<span class="unit">/PC/mes</span></div><div class="plan-sla">SLA: Respuesta &lt; 2h</div><ul class="plan-features"><li>Todo lo del plan Starter</li><li>1 visita presencial/mes</li><li>Backups automáticos diarios</li><li>Gestión licencias software</li><li>Configuración nuevos equipos</li><li>Auditoría seguridad semestral</li></ul><a href="#pymes-cta" class="btn-primary" style="width:100%;justify-content:center;">Solicitar auditoría</a></div>
-<div class="plan-card"><div class="plan-tier">Corporate</div><div class="plan-name">11+ PCs</div><div class="plan-subtitle">Empresa con dependencia IT</div><div class="plan-price">25€<span class="unit">/PC/mes</span></div><div class="plan-sla">SLA: Respuesta &lt; 1h</div><ul class="plan-features"><li>Todo lo del plan Business</li><li>Gestor de cuenta dedicado</li><li>Visitas según necesidad</li><li>Auditoría trimestral</li><li>Plan de recuperación incidentes</li><li>Soporte prioritario 24/7</li></ul><a href="#pymes-cta" class="btn-primary" style="width:100%;justify-content:center;">Solicitar auditoría</a></div>
+<div class="plan-card"><div class="plan-tier">Starter</div><div class="plan-name">1-5 PCs</div><div class="plan-subtitle">Micro empresa o despacho</div><div class="plan-price">Consultar<span class="unit">disponible julio 2026</span></div><div class="plan-sla">SLA: Respuesta &lt; 4h</div><ul class="plan-features"><li>Monitoreo 24/7 automático</li><li>Soporte remoto ilimitado</li><li>Antivirus empresarial incluido</li><li>1 visita presencial/trimestre</li><li>Backup cloud básico</li><li>Informe mensual de estado</li></ul><a href="#pymes-cta" class="btn-primary" style="width:100%;justify-content:center;">Avísame cuando arranque</a></div>
+<div class="plan-card featured"><div class="plan-tier">Business</div><div class="plan-name">6-10 PCs</div><div class="plan-subtitle">Pyme consolidada</div><div class="plan-price">Consultar<span class="unit">disponible julio 2026</span></div><div class="plan-sla">SLA: Respuesta &lt; 2h</div><ul class="plan-features"><li>Todo lo del plan Starter</li><li>1 visita presencial/mes</li><li>Backups automáticos diarios</li><li>Gestión licencias software</li><li>Configuración nuevos equipos</li><li>Auditoría seguridad semestral</li></ul><a href="#pymes-cta" class="btn-primary" style="width:100%;justify-content:center;">Avísame cuando arranque</a></div>
+<div class="plan-card"><div class="plan-tier">Corporate</div><div class="plan-name">11+ PCs</div><div class="plan-subtitle">Empresa con dependencia IT</div><div class="plan-price">Consultar<span class="unit">disponible julio 2026</span></div><div class="plan-sla">SLA: Respuesta &lt; 1h</div><ul class="plan-features"><li>Todo lo del plan Business</li><li>Gestor de cuenta dedicado</li><li>Visitas según necesidad</li><li>Auditoría trimestral</li><li>Plan de recuperación incidentes</li><li>Soporte prioritario 24/7</li></ul><a href="#pymes-cta" class="btn-primary" style="width:100%;justify-content:center;">Avísame cuando arranque</a></div>
 </div>
 <div class="pymes-compare">
 <div class="compare-title">MedicoPC vs. <span class="accent">técnico tradicional</span></div>
@@ -659,16 +718,19 @@ DESCUBRE EL DIAGNÓSTICO
 <div class="pymes-process">
 <h3 class="process-title">Cómo funciona</h3>
 <div class="process-steps">
-<div class="process-step"><div class="num">1</div><h5>Auditoría</h5><p>Visita 2-3h. Revisamos todos los equipos. Informe PDF. 175€ descontables.</p></div>
+<div class="process-step"><div class="num">1</div><h5>Auditoría</h5><p>Visita 2-3h. Revisamos todos los equipos. Informe PDF detallado del estado actual.</p></div>
 <div class="process-step"><div class="num">2</div><h5>Propuesta</h5><p>Plan personalizado: Starter, Business o Corporate. Salida a 3 meses.</p></div>
 <div class="process-step"><div class="num">3</div><h5>Onboarding</h5><p>Instalamos monitoreo. Configuramos backups. En 7 días operativo.</p></div>
 <div class="process-step"><div class="num">4</div><h5>En marcha</h5><p>Mantenimiento continuo. Tú trabajas. Informe mensual por email.</p></div>
 </div>
 </div>
 <div class="pymes-cta" id="pymes-cta">
-<h3>¿Empezamos con la auditoría?</h3>
-<p>2-3 horas en tus oficinas. Informe profesional. Presupuesto cerrado. 175€ descontables del primer mes si contratas.</p>
-<a href="#contacto" class="btn-primary">Solicitar auditoría pyme <span>→</span></a>
+<h3>Avísame cuando arranque</h3>
+<p>Estamos terminando los detalles legales y la oferta sale el <strong>1 de julio de 2026</strong>. Déjanos tu email y te avisamos cuando esté disponible. Sin spam.</p>
+<form class="lead-form" style="margin:24px auto 0;" onsubmit="event.preventDefault();const e=this.email.value;window.location.href='mailto:hola@medicopc.es?subject='+encodeURIComponent('Avísame cuando arranque · Pymes MSP')+'&body='+encodeURIComponent('Hola,\n\nQuiero que me aviséis cuando arranque la oferta de mantenimiento para pymes.\n\nMi email: '+e+'\n\nGracias.');">
+<input name="email" type="email" placeholder="tu@email.com" required>
+<button type="submit">Avísame por email</button>
+</form>
 </div>
 </section>
 <section id="despiece">
@@ -778,51 +840,51 @@ la gráfica es tu motor.
 <div class="gaming-grid">
 <div class="gaming-card">
 <div class="gaming-icon">🎮</div>
-<div class="gaming-name">Limpieza + repaste GPU</div>
-<div class="gaming-desc">Desmontaje gráfica, limpieza disipadores, pasta térmica premium.</div>
+<div class="gaming-name">Limpieza Completa + GPU</div>
+<div class="gaming-desc">Apertura, limpieza física, pasta térmica + pads, repaste GPU completo, servicing ventiladores.</div>
 <ul class="gaming-bullets">
 <li>Hasta +30% FPS</li>
 <li>Baja 15-20°C en carga</li>
-<li>Elimina stuttering</li>
-<li>Pasta Thermal Grizzly</li>
+<li>Elimina stuttering térmico</li>
+<li>Pasta Thermal Grizzly / Arctic MX-6</li>
 </ul>
-<div class="gaming-footer"><div class="gaming-price">49€</div><div class="gaming-time">1-2h</div></div>
+<div class="gaming-footer"><div class="gaming-price">120€</div><div class="gaming-time">2h</div></div>
 </div>
 <div class="gaming-card">
 <div class="gaming-icon">⚡</div>
-<div class="gaming-name">Optimización Windows Gaming</div>
-<div class="gaming-desc">Windows tuneado para juego: servicios, efectos, latencia, arranque.</div>
+<div class="gaming-name">Config PC Gaming</div>
+<div class="gaming-desc">Drivers GPU + tools (MSI Afterburner, undervolt, Steam, Discord, OBS) + tuning Windows para juego.</div>
 <ul class="gaming-bullets">
-<li>Game Mode + ajustes GPU</li>
-<li>Desactiva servicios inútiles</li>
-<li>Latencia reducida</li>
-<li>Arranque más rápido</li>
+<li>Drivers GPU + actualización</li>
+<li>MSI Afterburner + undervolt</li>
+<li>Steam, Epic, Discord, Galaxy</li>
+<li>Benchmarks antes/después</li>
 </ul>
-<div class="gaming-footer"><div class="gaming-price">49€</div><div class="gaming-time">1h</div></div>
+<div class="gaming-footer"><div class="gaming-price">80€</div><div class="gaming-time">1h 30min</div></div>
 </div>
 <div class="gaming-card featured">
 <div class="gaming-icon">🚀</div>
-<div class="gaming-name">Pack Gaming Total</div>
-<div class="gaming-desc">Todo lo que necesita tu PC gaming en una sola visita. Tu equipo como el primer día.</div>
+<div class="gaming-name">Pack Gaming Tune-Up</div>
+<div class="gaming-desc">Todo lo que necesita tu PC gaming en una sola visita: limpieza+GPU, config completa, benchmarks, tuning ventiladores.</div>
 <ul class="gaming-bullets">
-<li>Limpieza + repaste GPU</li>
-<li>Optim Windows Gaming</li>
-<li>Auditoría térmica completa</li>
+<li>Limpieza Completa + GPU</li>
+<li>Config PC Gaming completa</li>
+<li>Auditoría térmica + curva fans</li>
 <li>Benchmark antes/después</li>
 </ul>
-<div class="gaming-footer"><div class="gaming-price">119€<span class="unit">ahorras 30€</span></div><div class="gaming-time">2-3h</div></div>
+<div class="gaming-footer"><div class="gaming-price">150€<span class="unit">ahorras 50€</span></div><div class="gaming-time">3h</div></div>
 </div>
 <div class="gaming-card">
 <div class="gaming-icon">🔧</div>
-<div class="gaming-name">Montaje PC Gaming custom</div>
-<div class="gaming-desc">Montamos tu PC gaming desde cero con las piezas que elijas. Cableado limpio.</div>
+<div class="gaming-name">Pack Gaming New Rig</div>
+<div class="gaming-desc">Montamos tu PC gaming desde cero con las piezas que elijas. Cableado limpio, BIOS y Windows listos, test estabilidad.</div>
 <ul class="gaming-bullets">
-<li>Mano de obra profesional</li>
-<li>Cable management premium</li>
-<li>BIOS + Windows listos</li>
+<li>Montaje completo + cableado</li>
+<li>Clonado / instalación SSD</li>
+<li>BIOS + Windows configurados</li>
 <li>Test estabilidad 24h</li>
 </ul>
-<div class="gaming-footer"><div class="gaming-price">80€<span class="unit">m.o. desde</span></div><div class="gaming-time">3-4h</div></div>
+<div class="gaming-footer"><div class="gaming-price">140€<span class="unit">m.o. · piezas aparte</span></div><div class="gaming-time">4h</div></div>
 </div>
 </div>
 <div class="gaming-cta">
@@ -846,13 +908,104 @@ la gráfica es tu motor.
 </section>
 <section id="tarifas">
 <div class="section-head">
-<div class="eyebrow"><span class="pulse"></span>Tarifas</div>
+<div class="eyebrow"><span class="pulse"></span>Tarifas v3.2 · vigente</div>
 <h2 class="h-lg">Precios <span class="accent">transparentes</span>.<br>Sin sorpresas. Nunca.</h2>
+<p class="lead">Catálogo completo. Si no aparece, pregúntanos.</p>
 </div>
 <div class="tarifas-grid">
-<div class="tarifa-card"><div class="tarifa-tier">Particulares</div><div class="tarifa-name">Tu hogar</div><ul class="tarifa-list"><li><span class="name">Intervención Básica</span><span class="price highlight">59€</span></li><li><span class="name">Intervención Completa</span><span class="price">89€</span></li><li><span class="name">Completa + GPU</span><span class="price">109€</span></li><li><span class="name">Formateo</span><span class="price">59€</span></li><li><span class="name">Formateo con OEM</span><span class="price">79€</span></li><li><span class="name">Configuración PC nuevo</span><span class="price">45€</span></li></ul><a href="#contacto" class="btn-primary" style="width:100%;justify-content:center;">Pedir cita</a></div>
-<div class="tarifa-card featured"><div class="tarifa-tier">Pymes · MSP</div><div class="tarifa-name">Tu empresa</div><ul class="tarifa-list"><li><span class="name">Auditoría + informe</span><span class="price highlight">175€</span></li><li><span class="name">MSP 1-5 PCs</span><span class="price">35€/mes</span></li><li><span class="name">MSP 6-10 PCs</span><span class="price">30€/mes</span></li><li><span class="name">MSP 11+ PCs</span><span class="price">25€/mes</span></li><li><span class="name">Respuesta &lt; 2h</span><span class="price">incluido</span></li><li><span class="name">Monitoreo 24/7</span><span class="price">incluido</span></li></ul><a href="#pymes-cta" class="btn-primary" style="width:100%;justify-content:center;">Solicitar propuesta</a></div>
-<div class="tarifa-card"><div class="tarifa-tier">Recuperación</div><div class="tarifa-name">Tus datos</div><ul class="tarifa-list"><li><span class="name">Recuperación Nivel 1</span><span class="price highlight">110€</span></li><li><span class="name">Recuperación Nivel 2</span><span class="price">250-400€</span></li><li><span class="name">Disco que no monta</span><span class="price">110€</span></li><li><span class="name">Archivos borrados</span><span class="price">110€</span></li><li><span class="name">PCB dañado</span><span class="price">desde 250€</span></li><li><span class="name">Diagnóstico previo</span><span class="price">gratis</span></li></ul><a href="#contacto" class="btn-primary" style="width:100%;justify-content:center;">Diagnóstico gratis</a></div>
+
+<!-- A · DIAGNÓSTICO -->
+<div class="tarifa-card">
+<div class="tarifa-tier">Bloque A · Diagnóstico</div>
+<div class="tarifa-name">Diagnóstico</div>
+<ul class="tarifa-list">
+<li><span class="name">Diagnóstico + presupuesto</span><span class="price highlight">Gratis*</span></li>
+<li><span class="name">Asesoría técnica (compra PC, sin intervención)</span><span class="price">25€</span></li>
+</ul>
+<p class="tarifa-foot">* Solo cobramos si reparamos. Si tras la visita no se acepta presupuesto: 25€ por desplazamiento.</p>
+<a href="#contacto" class="btn-primary" style="width:100%;justify-content:center;">Pedir diagnóstico</a>
+</div>
+
+<!-- B · SOFTWARE / MANTENIMIENTO -->
+<div class="tarifa-card featured">
+<div class="tarifa-tier">Bloque B · Software</div>
+<div class="tarifa-name">Mantenimiento</div>
+<ul class="tarifa-list">
+<li><span class="name">Limpieza Básica</span><span class="price">60€</span></li>
+<li><span class="name">Limpieza Completa</span><span class="price highlight">80€</span></li>
+<li><span class="name">Limpieza Completa + GPU</span><span class="price">120€</span></li>
+<li><span class="name">Recuperación contraseña Windows</span><span class="price">45€</span></li>
+<li><span class="name">Formateo seco</span><span class="price">70€</span></li>
+<li><span class="name">Formateo + Backup y restauración</span><span class="price highlight">80€</span></li>
+<li><span class="name">Instalación Windows 11 OEM</span><span class="price">80€</span></li>
+<li><span class="name">Instalación Windows 10 OEM</span><span class="price">80€</span></li>
+<li><span class="name">Migración PC viejo → nuevo</span><span class="price">100€</span></li>
+</ul>
+<a href="#contacto" class="btn-primary" style="width:100%;justify-content:center;">Pedir cita</a>
+</div>
+
+<!-- C · HARDWARE -->
+<div class="tarifa-card">
+<div class="tarifa-tier">Bloque C · Hardware</div>
+<div class="tarifa-name">Mano de obra</div>
+<ul class="tarifa-list">
+<li><span class="name">Instalación SSD / RAM / disco</span><span class="price">30€</span></li>
+<li><span class="name">Clonado OS → SSD nuevo</span><span class="price">50€</span></li>
+<li><span class="name">Cambio batería portátil</span><span class="price">desde 80€</span></li>
+<li><span class="name">Cambio pantalla portátil</span><span class="price">desde 90€</span></li>
+<li><span class="name">Cambio teclado portátil</span><span class="price">desde 70€</span></li>
+<li><span class="name">Reparación bisagras portátil</span><span class="price">MO desde 50€ + pieza</span></li>
+<li><span class="name">Cambio fuente alimentación PC</span><span class="price">MO desde 45€ + pieza</span></li>
+</ul>
+<p class="tarifa-foot">Pieza aparte donde aplique. Para portátiles, dinos marca + modelo y cerramos precio.</p>
+<a href="#contacto" class="btn-primary" style="width:100%;justify-content:center;">Consultar modelo</a>
+</div>
+
+<!-- D · RECUPERACIÓN DATOS -->
+<div class="tarifa-card">
+<div class="tarifa-tier">Bloque D · Recuperación</div>
+<div class="tarifa-name">Datos</div>
+<ul class="tarifa-list">
+<li><span class="name">Recuperación Nivel 1 (lógica, disco funcional)</span><span class="price highlight">130€</span></li>
+<li><span class="name">Recuperación Nivel 2 (laboratorio sala limpia)</span><span class="price">350–800€</span></li>
+<li><span class="name">Gestión MedicoPC (N2)</span><span class="price">+60€</span></li>
+<li><span class="name">Diagnóstico previo</span><span class="price">Gratis</span></li>
+</ul>
+<p class="tarifa-foot">N2: derivación a laboratorio partner. Cobramos solo nuestra gestión + factura del lab sin markup.</p>
+<a href="#contacto" class="btn-primary" style="width:100%;justify-content:center;">Diagnóstico gratis</a>
+</div>
+
+<!-- E · EXTRAS -->
+<div class="tarifa-card">
+<div class="tarifa-tier">Bloque E · Extras</div>
+<div class="tarifa-name">Desplazamientos y otros</div>
+<ul class="tarifa-list">
+<li><span class="name">Asistencia remota (mín. 30 min)</span><span class="price">30€ / 45€/h</span></li>
+<li><span class="name">Recogida + entrega Madrid capital</span><span class="price">25€</span></li>
+<li><span class="name">Urgencia 24–48h</span><span class="price">+30% (mín 25€)</span></li>
+<li><span class="name">Formación 1h (uso, seguridad, phishing)</span><span class="price">50€/h</span></li>
+<li><span class="name">Configuración router básica</span><span class="price">25–35€</span></li>
+<li><span class="name">Configuración impresora/escáner a domicilio</span><span class="price">30€</span></li>
+<li><span class="name">Recargo fuera M30 / M40 / lejano</span><span class="price">+20 / +30 / +45€</span></li>
+</ul>
+<p class="tarifa-foot">Madrid capital sin recargo. Configuración impresora 30€ por la primera hora; si excede, 45€/h estándar.</p>
+<a href="#contacto" class="btn-primary" style="width:100%;justify-content:center;">Consultar</a>
+</div>
+
+<!-- F · PACKS -->
+<div class="tarifa-card featured">
+<div class="tarifa-tier">Bloque F · Packs</div>
+<div class="tarifa-name">Combos con ahorro</div>
+<ul class="tarifa-list">
+<li><span class="name">Pack Gaming Tune-Up</span><span class="price highlight">150€</span></li>
+<li><span class="name">Pack Gaming New Rig (montaje)</span><span class="price">140€</span></li>
+<li><span class="name">Config PC Gaming (suelto)</span><span class="price">80€</span></li>
+<li><span class="name">Pack Rescate (cuando todo sale mal)</span><span class="price highlight">200€</span></li>
+</ul>
+<p class="tarifa-foot">Pack Rescate = Diagnóstico + Recuperación N1 + Formateo + Backup en una visita.</p>
+<a href="#contacto" class="btn-primary" style="width:100%;justify-content:center;">Pedir pack</a>
+</div>
+
 </div>
 </section>
 <section id="contacto">
