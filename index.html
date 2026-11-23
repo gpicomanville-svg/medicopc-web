@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Técnico informático a domicilio en Madrid · MedicoPC</title>
+<meta name="description" content="Técnico informático a domicilio en Madrid y alrededores. Diagnóstico con informe por 40 €, precio cerrado antes de empezar y, si no lo arreglo, no cobro.">
+<link rel="canonical" href="https://medicopc.es/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="MedicoPC">
+<meta property="og:title" content="Técnico informático a domicilio en Madrid · MedicoPC">
+<meta property="og:description" content="Diagnóstico con informe por 40 €, precio cerrado antes de empezar y 30 días de garantía.">
+<meta property="og:image" content="https://medicopc.es/img/casa.jpg">
+<meta property="og:url" content="https://medicopc.es/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='2' y='3' width='28' height='20' rx='5' fill='%23e8185a'/%3E%3Cpath d='M12.5 28h7M16 23v5' stroke='%23e8185a' stroke-width='2.4' stroke-linecap='round'/%3E%3Cpath d='M6 13.5h5l2-4.5 3 9 2.5-6.5 1.5 2h6' stroke='%23fff' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "ComputerRepair"],
+  "name": "MedicoPC",
+  "description": "Técnico informático a domicilio en Madrid y alrededores: reparación, puesta a punto y recuperación de datos con precio cerrado.",
+  "url": "https://medicopc.es/",
+  "image": "https://medicopc.es/img/casa.jpg",
+  "telephone": "+34640126543",
+  "email": "hola@medicopc.es",
+  "priceRange": "€€",
+  "paymentAccepted": "Efectivo, Bizum",
+  "currenciesAccepted": "EUR",
+  "slogan": "Si no lo arreglo, no cobro",
+  "areaServed": [
+    {"@type": "City", "name": "Madrid"},
+    {"@type": "Place", "name": "Vicálvaro, Madrid"},
+    {"@type": "City", "name": "Coslada"},
+    {"@type": "Place", "name": "Moratalaz, Madrid"},
+    {"@type": "Place", "name": "San Blas, Madrid"},
+    {"@type": "Place", "name": "Vallecas, Madrid"},
+    {"@type": "Place", "name": "Latina, Madrid"},
+    {"@type": "Place", "name": "Aluche, Madrid"},
+    {"@type": "AdministrativeArea", "name": "Comunidad de Madrid"}
+  ],
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "21:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "20:00"}
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&display=swap">
+<style>
+/* Layout: plain-spoken local tradesman page; editorial left-aligned column, price table as the centrepiece, large legible type for older readers.
+   Marca MedicoPC v1 (ver 3_Negocio/guia_marca.md): rosa marca #e8185a · verde quirófano #0b6e5c · tinta #16201d · papel #f6f7f4
+   Títulos: Bricolage Grotesque 600/800 · Texto: Atkinson Hyperlegible 400/700, 19 px. */
+:root {
+  --papel: #f6f7f4; --blanco: #ffffff; --tinta: #16201d; --gris: #4f5b57; --raya: #d9dfdb;
+  --verde: #0b6e5c; --verde-claro: #e2f1ec; --rosa: #d6104f; --rosa-claro: #fbe6ed; --ambar: #8a5a00; --ambar-claro: #fbf0d9;
+  --titulo: 'Bricolage Grotesque', 'Arial Narrow', sans-serif;
+  --texto: 'Atkinson Hyperlegible', Verdana, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --papel: #111614; --blanco: #18201d; --tinta: #eef3f1; --gris: #aab7b2; --raya: #2b3632;
+    --verde: #4fd1b0; --verde-claro: #12302a; --rosa: #ff5c8d; --rosa-claro: #3a1622; --ambar: #f2c063; --ambar-claro: #33270f;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --papel: #111614; --blanco: #18201d; --tinta: #eef3f1; --gris: #aab7b2; --raya: #2b3632;
+  --verde: #4fd1b0; --verde-claro: #12302a; --rosa: #ff5c8d; --rosa-claro: #3a1622; --ambar: #f2c063; --ambar-claro: #33270f;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; background: var(--papel); color: var(--tinta); font: 19px/1.6 var(--texto); padding-bottom: 76px; }
+a { color: var(--verde); }
+a:focus-visible, summary:focus-visible { outline: 3px solid var(--rosa); outline-offset: 3px; border-radius: 4px; }
+h1, h2, h3 { font-family: var(--titulo); line-height: 1.08; margin: 0; text-wrap: balance; letter-spacing: -.015em; }
+h2 { font-size: clamp(1.9rem, 4.2vw, 2.8rem); font-weight: 800; }
+h3 { font-size: 1.35rem; font-weight: 600; }
+p { margin: 0; max-width: 60ch; }
+.caja { max-width: 1080px; margin: 0 auto; padding-left: max(18px, env(safe-area-inset-left, 0px)); padding-right: max(18px, env(safe-area-inset-right, 0px)); }
+section { padding-block: 64px; border-top: 1px solid var(--raya); scroll-margin-top: 20px; }
+.antetitulo { font-weight: 700; color: var(--rosa); margin-bottom: 8px; }
+
+/* Cabecera */
+.cabecera { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding-block: 18px; flex-wrap: wrap; }
+.marca { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--tinta); font-family: var(--titulo); font-weight: 800; font-size: 1.4rem; }
+.marca span { color: var(--rosa); }
+.tel { font-weight: 700; text-decoration: none; color: var(--tinta); white-space: nowrap; }
+.tel small { display: block; font-weight: 400; color: var(--gris); font-size: .8rem; }
+
+/* Portada */
+.portada { border-top: none; padding-block: 28px 64px; }
+.portada .rejilla { display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 40px; align-items: center; }
+.portada h1 { font-size: clamp(2.4rem, 6vw, 4rem); font-weight: 800; }
+.portada p.sub { margin: 18px 0 24px; font-size: 1.15rem; color: var(--gris); }
+.precio-entrada { display: inline-flex; flex-wrap: wrap; align-items: baseline; gap: 2px 12px; max-width: 100%; background: var(--blanco); border: 2px solid var(--tinta); border-radius: 12px; padding: 12px 18px; margin-bottom: 22px; }
+.precio-entrada .letra-peq { flex-basis: 100%; color: var(--gris); font-size: .95rem; }
+.precio-entrada b { font-family: var(--titulo); font-size: 1.9rem; }
+.botones { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 22px; border-radius: 10px; font-weight: 700; text-decoration: none; font-size: 1.05rem; }
+.btn-wa { background: #1f8a4c; color: #fff; }
+.btn-wa:hover { background: #18703d; }
+.btn-tel { border: 2px solid var(--tinta); color: var(--tinta); }
+.foto { display: block; width: 100%; max-width: 100%; height: auto; border-radius: 6px; }
+figure { margin: 0; }
+figcaption { font-size: .85rem; color: var(--gris); margin-top: 8px; }
+
+/* Qué arreglo */
+.problemas { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 0 40px; margin-top: 26px; }
+.problema { display: flex; justify-content: space-between; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--raya); }
+.problema b { display: block; }
+.problema span { color: var(--gris); font-size: .95rem; }
+.problema em { font-style: normal; font-weight: 700; white-space: nowrap; }
+
+/* Precios */
+.tabla-caja { overflow-x: auto; margin-top: 26px; background: var(--blanco); border: 1px solid var(--raya); border-radius: 8px; }
+table { border-collapse: collapse; width: 100%; min-width: 560px; }
+th, td { text-align: left; padding: 13px 18px; border-bottom: 1px solid var(--raya); vertical-align: top; }
+th { font-size: .85rem; color: var(--gris); font-weight: 700; background: var(--papel); }
+tr.grupo td { font-family: var(--titulo); font-weight: 600; font-size: 1.05rem; background: var(--verde-claro); color: var(--verde); }
+td.p { white-space: nowrap; font-weight: 700; text-align: right; font-variant-numeric: tabular-nums; }
+td small { display: block; color: var(--gris); font-size: .85rem; }
+.reglas { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px 28px; margin-top: 22px; }
+.reglas p { font-size: .97rem; }
+.reglas b { color: var(--verde); }
+
+/* Quién soy */
+
+/* Caminos */
+.caminos { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 22px; margin-top: 28px; }
+.camino { background: var(--blanco); border: 1px solid var(--raya); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; }
+.camino .cuerpo { padding: 20px 22px 24px; display: flex; flex-direction: column; gap: 10px; }
+.camino ul { margin: 0; padding-left: 1.1em; color: var(--gris); }
+.camino li { margin: 4px 0; }
+.aviso-estafas { background: var(--rosa-claro); border-radius: 8px; padding: 14px 16px; font-size: .95rem; }
+.aviso-estafas b { color: var(--rosa); }
+
+/* Reseñas, garantía, pasos */
+.pasos { margin: 26px 0 0; padding-left: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 22px; counter-reset: p; }
+.pasos li { counter-increment: p; }
+.pasos li::before { content: counter(p); font-family: var(--titulo); font-weight: 800; font-size: 2.6rem; color: var(--rosa); display: block; line-height: 1; margin-bottom: 6px; }
+.pasos b { display: block; font-size: 1.1rem; }
+.pasos span { color: var(--gris); }
+.garantia { display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: center; background: var(--verde-claro); border-radius: 10px; padding: 22px 24px; margin-top: 30px; }
+.garantia .dias { font-family: var(--titulo); font-weight: 800; font-size: 3rem; color: var(--verde); line-height: 1; }
+
+details { border-bottom: 1px solid var(--raya); padding: 14px 0; }
+summary { cursor: pointer; font-weight: 700; }
+details p { margin-top: 8px; color: var(--gris); }
+
+footer { padding-block: 34px; border-top: 1px solid var(--raya); color: var(--gris); font-size: .95rem; }
+footer .caja { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
+footer b { color: var(--tinta); }
+footer .nota-visitas { display: block; margin-top: 8px; }
+
+/* Barra fija móvil */
+.barra-fija { position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; display: flex; gap: 10px; padding: 10px max(14px, env(safe-area-inset-right, 0px)) calc(10px + env(safe-area-inset-bottom, 0px)) max(14px, env(safe-area-inset-left, 0px)); background: var(--blanco); border-top: 1px solid var(--raya); }
+.barra-fija a { flex: 1; justify-content: center; }
+@media (min-width: 900px) { .barra-fija { display: none; } body { padding-bottom: 0; } }
+</style>
+</head>
+<body>
+
+<div class="caja cabecera">
+  <a class="marca" href="#arriba" aria-label="MedicoPC">
+    <svg width="38" height="38" viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="3" width="28" height="20" rx="5" fill="#e8185a"></rect><path d="M12.5 28h7M16 23v5" stroke="#e8185a" stroke-width="2.4" stroke-linecap="round"></path><path d="M6 13.5h5l2-4.5 3 9 2.5-6.5 1.5 2h6" stroke="#fff" stroke-width="2.1" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    <b style="font-weight: 800">Medico<span>PC</span></b>
+  </a>
+  <a class="tel" href="tel:+34640126543">640 126 543<small>Llamada o WhatsApp</small></a>
+</div>
+
+<main id="arriba">
+  <section class="portada">
+    <div class="caja rejilla">
+      <div>
+        <p class="antetitulo">Técnico informático a domicilio · Comunidad de Madrid</p>
+        <h1>Arreglo tu ordenador en tu casa.</h1>
+        <p class="sub">Te explico qué le pasa con palabras normales y te digo el precio antes de tocar nada. Si no lo arreglo, no cobro.</p>
+        <div class="precio-entrada"><span>Diagnóstico con informe</span><b>40 €</b><span class="letra-peq">Se descuenta si lo arreglo. Desplazamiento incluido en Madrid y alrededores.</span></div>
+        <div class="botones">
+          <a class="btn btn-wa" href="https://wa.me/34640126543?text=Hola%2C%20mi%20ordenador%20..."><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.2 5 5 0 0 0 1.1 2.7 11.5 11.5 0 0 0 4.4 3.9c1.6.7 2.3.7 3.1.6a2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .2-1.2c-.1-.1-.3-.2-.5-.3z"></path></svg>Escríbeme por WhatsApp</a>
+          <a class="btn btn-tel" href="tel:+34640126543"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"></path></svg>Llamar</a>
+        </div>
+      </div>
+      <figure>
+        <img class="foto" src="img/casa.jpg" width="1200" height="904" alt="Portátil del técnico conectado por cable al portátil de un cliente, en un salón luminoso de Madrid">
+      </figure>
+    </div>
+  </section>
+
+  <section id="que-arreglo">
+    <div class="caja">
+      <p class="antetitulo">Qué arreglo</p>
+      <h2>Dime qué le pasa.</h2>
+      <div class="problemas">
+        <div class="problema"><div><b>Va lento o tarda en encender</b><span>Puesta a punto completa, medida antes y después</span></div><em>70 €</em></div>
+        <div class="problema"><div><b>Hace ruido o se calienta</b><span>Limpieza interior y pasta térmica</span></div><em>60 €</em></div>
+        <div class="problema"><div><b>Tiene virus o sale publicidad</b><span>Limpieza y revisión de tus cuentas</span></div><em>60 €</em></div>
+        <div class="problema"><div><b>No enciende o se queda en el logo</b><span>Rescate: copia de tus datos y reparación</span></div><em>120 €</em></div>
+        <div class="problema"><div><b>Los juegos van a tirones</b><span>Optimización con FPS medidos</span></div><em>80 €</em></div>
+        <div class="problema"><div><b>Me he comprado un ordenador nuevo</b><span>Te paso todo del viejo</span></div><em>90 €</em></div>
+        <div class="problema"><div><b>El móvil o la tablet</b><span>Configuración, copias y seguridad (sin cambiar piezas)</span></div><em><a href="#precios">ver precios</a></em></div>
+        <div class="problema"><div><b>La consola o el WiFi</b><span>Limpieza de PS4/PS5/Xbox, red para jugar, cobertura</span></div><em><a href="#precios">ver precios</a></em></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="precios">
+    <div class="caja">
+      <p class="antetitulo">Precios</p>
+      <h2>Te digo el precio antes de empezar.</h2>
+      <p style="margin-top: 14px; color: var(--gris)">Precio cerrado por trabajo, no por horas. Las piezas, a precio de coste y con ticket.</p>
+      <div class="tabla-caja">
+        <table>
+          <thead><tr><th>Servicio</th><th style="text-align: right">Precio</th></tr></thead>
+          <tbody>
+            <tr class="grupo"><td colspan="2">Ordenadores</td></tr>
+            <tr><td>Diagnóstico con informe<small>Se descuenta si haces el arreglo</small></td><td class="p">40 €</td></tr>
+            <tr><td>Asesoría de compra<small>Te ayudo a elegir ordenador</small></td><td class="p">40 €</td></tr>
+            <tr><td>Puesta a punto<small>Arranque, archivos sobrantes, actualizaciones, salud del disco</small></td><td class="p">70 €</td></tr>
+            <tr><td>Limpieza interior y pasta térmica</td><td class="p">60 €</td></tr>
+            <tr><td>Limpieza a fondo de la tarjeta gráfica<small>Desmontada, con pasta y pads nuevos. Junto con la limpieza interior: 120 €</small></td><td class="p">80 €</td></tr>
+            <tr><td>Puesta a punto + limpieza interior</td><td class="p">110 €</td></tr>
+            <tr><td>Virus y chequeo de seguridad</td><td class="p">60 €</td></tr>
+            <tr><td>Reinstalar Windows<small>Con copia de tus datos: 80 €</small></td><td class="p">60 €</td></tr>
+            <tr><td>Rescate: no arranca<small>Copia de datos + reparación o reinstalación</small></td><td class="p">120 €</td></tr>
+            <tr><td>Ordenador nuevo listo<small>Sin pasar nada del viejo: cuentas, actualizaciones y programas</small></td><td class="p">50 €</td></tr>
+            <tr><td>Pasar todo a un ordenador nuevo</td><td class="p">90 €</td></tr>
+            <tr><td>Copia de seguridad del ordenador<small>A un disco o a la nube, programada y probada</small></td><td class="p">50 €</td></tr>
+            <tr><td>Recuperar el acceso al ordenador<small>Solo el titular</small></td><td class="p">45 €</td></tr>
+            <tr><td>Instalar SSD, RAM o disco<small>Pieza aparte</small></td><td class="p">40 €</td></tr>
+            <tr><td>Clonar disco</td><td class="p">50 €</td></tr>
+            <tr><td>Disco SSD nuevo con todo pasado<small>Disco aparte</small></td><td class="p">70 €</td></tr>
+            <tr><td>Optimización gaming<small>FPS medidos antes y después</small></td><td class="p">80 €</td></tr>
+            <tr><td>Cambio de batería de portátil<small>Pieza aparte</small></td><td class="p">45 €</td></tr>
+            <tr><td>Cambio de pantalla de portátil<small>Pieza aparte</small></td><td class="p">65 €</td></tr>
+            <tr><td>Cambio de teclado de portátil<small>Pieza aparte</small></td><td class="p">70 €</td></tr>
+            <tr><td>Cambio de ventilador de portátil<small>Pieza aparte</small></td><td class="p">55 €</td></tr>
+            <tr class="grupo"><td colspan="2">Recuperar archivos</td></tr>
+            <tr><td>Diagnóstico de recuperación<small>Te digo qué se puede recuperar. Se descuenta si lo hago; si no se recupera nada, es lo único que pagas</small></td><td class="p">40 €</td></tr>
+            <tr><td>Recuperar archivos borrados<small>De un pendrive, una tarjeta o un disco sano</small></td><td class="p">140 €</td></tr>
+            <tr><td>Rescate de un disco dañado o formateado<small>Lo copio entero en el taller y recupero desde la copia, sin tocar el original</small></td><td class="p">280 €</td></tr>
+            <tr><td>Disco con daño físico (hace clic, no gira, se mojó)<small>Lo gestiono con un laboratorio especializado; antes te doy su precio cerrado</small></td><td class="p">60 € + laboratorio</td></tr>
+            <tr class="grupo"><td colspan="2">Móviles, tablets, consolas y casa</td></tr>
+            <tr><td>Móvil nuevo listo (paso de WhatsApp, fotos y contactos)</td><td class="p">50 €</td></tr>
+            <tr><td>Puesta a punto y chequeo de seguridad del móvil · publicidad o virus en Android</td><td class="p">40 €</td></tr>
+            <tr><td>Copia de fotos y WhatsApp</td><td class="p">40 €</td></tr>
+            <tr><td>Limpieza interior de consola · PS4 y Xbox One</td><td class="p">50 €</td></tr>
+            <tr><td>Limpieza interior de consola · PS5 y Xbox Series</td><td class="p">70 €</td></tr>
+            <tr><td>Consola nueva lista<small>Conectada a la tele y a internet, todo pasado de la vieja y control parental si es para niños</small></td><td class="p">50 €</td></tr>
+            <tr><td>Más espacio en la PS5<small>SSD aparte</small></td><td class="p">40 €</td></tr>
+            <tr><td>Cambiar el disco de la PS4 por un SSD, con tus partidas<small>SSD aparte</small></td><td class="p">50 €</td></tr>
+            <tr><td>Red para jugar online (NAT, puertos, prioridad)</td><td class="p">60 €</td></tr>
+            <tr><td>WiFi de casa: diagnóstico y optimización del router</td><td class="p">50 €</td></tr>
+            <tr><td>Smart TV y aparatos de casa<small>Tele, Chromecast o Alexa, configurados y funcionando</small></td><td class="p">40 €</td></tr>
+            <tr class="grupo"><td colspan="2">Packs</td></tr>
+            <tr><td>Pack tranquilidad<small>Puesta a punto + seguridad + explicación con calma + guía anti-estafas en papel</small></td><td class="p">90 €</td></tr>
+            <tr><td>Pack mayores para el móvil<small>Letra grande, contactos de emergencia, WhatsApp y seguridad</small></td><td class="p">70 €</td></tr>
+            <tr class="grupo"><td colspan="2">Otros</td></tr>
+            <tr><td>Asistencia remota<small>Sin ir a tu casa</small></td><td class="p">20 € / 30 min</td></tr>
+            <tr><td>Recogida y entrega del equipo</td><td class="p">20 €</td></tr>
+            <tr><td>Instalar una impresora<small>En el ordenador y en el móvil, con prueba de impresión y escaneo</small></td><td class="p">40 €</td></tr>
+            <tr><td>Formación<small>Ordenador, móvil o programas, a tu ritmo</small></td><td class="p">40 € / hora</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="reglas">
+        <p><b>Desplazamiento:</b> incluido en Madrid y alrededores (zonas A, B1 y B2 del abono). Zonas B3, C1 y C2 (la sierra, Aranjuez…): +20 €. Fuera de la Comunidad, un suplemento según la distancia que te digo antes.</p>
+        <p><b>Urgente (24-48 h):</b> +20 €. Siempre avisado antes.</p>
+        <p><b>Pago:</b> efectivo o Bizum al terminar, cuando ya funciona.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="quien">
+    <div class="caja">
+      <div>
+        <p class="antetitulo">Quién va a tu casa</p>
+        <h2>Soy Guillermo. Trabajo solo.</h2>
+        <p style="margin-top: 16px">Llevo más de nueve años en soporte informático y atención al usuario. Mi trabajo siempre ha sido el mismo: que el ordenador de otra persona vuelva a funcionar, y explicárselo sin que nadie se sienta tonto por preguntar.</p>
+        <p style="margin-top: 12px">En casa soy al que llaman cuando la impresora no imprime o el portátil «va raro». MedicoPC sale de ahí.</p>
+        <p style="margin-top: 12px">Quien te contesta el WhatsApp es quien llama a tu puerta. Y lo de «Médico» va en serio: antes de tocar nada, miro qué tiene y te digo el precio. Lo demás lo decides tú.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="para-quien">
+    <div class="caja">
+      <p class="antetitulo">Para quién</p>
+      <h2>Tres tipos de visita.</h2>
+      <div class="caminos">
+        <article class="camino">
+          <img class="foto" src="img/limpieza.jpg" width="1200" height="904" loading="lazy" alt="Limpieza del ventilador de un portátil moderno con soplador y pincel" style="border-radius: 0">
+          <div class="cuerpo">
+            <h3>Para mayores (y para sus hijos)</h3>
+            <p>Voy sin prisas, lo explico las veces que haga falta y dejo las cosas apuntadas en papel.</p>
+            <p><b>¿Lo pides para tu padre o tu madre?</b> Te mando a ti también el informe por WhatsApp y te digo cómo ha quedado.</p>
+            <div class="aviso-estafas"><b>Contra las estafas:</b> nunca te pediré claves, códigos del banco ni que instales nada por teléfono. Si alguien «de Microsoft» te llama, cuelga.</div>
+          </div>
+        </article>
+        <article class="camino">
+          <img class="foto" src="img/gaming.jpg" width="1200" height="904" loading="lazy" alt="Escritorio gaming con monitor curvo y torre con cristal" style="border-radius: 0">
+          <div class="cuerpo">
+            <h3>Para gamers</h3>
+            <p>Mido tu juego antes y después, con la misma escena, y te dejo las cifras por escrito para que veas la diferencia.</p>
+            <ul><li>Drivers limpios y temperatura bajo control</li><li>Limpieza a fondo de la gráfica, con pasta y pads nuevos</li><li>Limpieza de consola y red para jugar online</li></ul>
+          </div>
+        </article>
+        <article class="camino">
+          <img class="foto" src="img/oficina.jpg" width="1200" height="904" loading="lazy" alt="El técnico explica algo en la pantalla a la dueña de un pequeño estudio" style="border-radius: 0">
+          <div class="cuerpo">
+            <h3>Para pequeños negocios</h3>
+            <p>Despachos, comercios y talleres de 2 a 10 ordenadores. Sin permanencia.</p>
+            <ul><li>Por incidencia: 60 € la primera hora, luego 45 €/h</li><li>Mantenimiento: 15 € por equipo al mes (mínimo 3)</li><li>Plan oficina hasta 8 equipos: 100 € al mes</li></ul>
+            <a href="mailto:hola@medicopc.es?subject=Presupuesto%20para%20empresa">Pedir presupuesto por email</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="como">
+    <div class="caja">
+      <p class="antetitulo">Cómo trabajo</p>
+      <h2>Tres pasos, sin sorpresas.</h2>
+      <ol class="pasos">
+        <li><b>Miro qué tiene</b><span>Reviso disco, temperatura, arranque y virus. Tus fotos y documentos no se tocan.</span></li>
+        <li><b>Te digo qué hacer y cuánto cuesta</b><span>Tú decides. Si no te convence, solo pagas el diagnóstico.</span></li>
+        <li><b>Lo arreglo y lo comprobamos juntos</b><span>Con punto de restauración antes de tocar nada, y un informe con el antes y el después.</span></li>
+      </ol>
+      <div class="garantia"><span class="dias">30</span><p><b>días de garantía.</b> Si vuelve a fallar lo mismo, vuelvo sin coste.</p></div>
+    </div>
+  </section>
+
+  <section id="opiniones">
+    <div class="caja">
+      <p class="antetitulo">Opiniones</p>
+      <h2>Todavía no tengo reseñas.</h2>
+      <p style="margin-top: 16px">MedicoPC acaba de empezar y no voy a poner opiniones inventadas. Si te arreglo el ordenador y quedas contento, te pediré que lo cuentes en Google: tu reseña puede ser la primera.</p>
+    </div>
+  </section>
+
+  <section id="dudas">
+    <div class="caja">
+      <p class="antetitulo">Dudas</p>
+      <h2>Preguntas que me hacen.</h2>
+      <div style="margin-top: 18px; max-width: 760px">
+        <details><summary>¿Vas a mi zona?</summary><p>Voy a cualquier punto de la Comunidad de Madrid. En Madrid capital (Vicálvaro, Moratalaz, San Blas, Vallecas, Latina, Aluche…) y los pueblos de alrededor, como Coslada, (zonas A, B1 y B2 del abono de transporte) el desplazamiento va incluido; en las zonas B3, C1 y C2 (la sierra, Aranjuez…) son 20 € más. Fuera de la Comunidad también voy, con un suplemento que te digo antes de quedar.</p></details>
+        <details><summary>¿Cuándo puedes venir?</summary><p>Te atiendo por teléfono y WhatsApp de lunes a viernes de 9:00 a 21:00 y los sábados de 10:00 a 20:00. Las visitas a domicilio son por la tarde y los sábados. Si no puedes estar en casa, recojo el equipo y te lo devuelvo arreglado al día siguiente.</p></details>
+        <details><summary>¿Cuánto tarda?</summary><p>El diagnóstico, unos 20 minutos. Una puesta a punto, entre una y dos horas.</p></details>
+        <details><summary>¿Vas a ver mis fotos o mis documentos?</summary><p>No. Reviso el estado del equipo, no lo que guardas. Si hace falta una copia, se hace sin abrir nada.</p></details>
+        <details><summary>¿Y si no tiene arreglo?</summary><p>Te lo digo claro y te aconsejo qué hacer. Solo pagas el diagnóstico.</p></details>
+        <details><summary>¿Cambias pantallas de móvil?</summary><p>Por ahora no. Con el móvil hago configuración, copias y seguridad. Si necesitas una reparación, te digo dónde.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="caja">
+    <div><b>MedicoPC</b><br>Técnico informático a domicilio<br>Toda la Comunidad de Madrid</div>
+    <div><b>Contacto</b><br>640 126 543 (llamada y WhatsApp)<br>hola@medicopc.es</div>
+    <div><b>Horario de atención</b><br>Lunes a viernes, 9:00-21:00<br>Sábados, 10:00-20:00<br><span class="nota-visitas">Las visitas a domicilio son por la tarde y los sábados. Si no puedes estar en casa, recojo el equipo y te lo devuelvo arreglado al día siguiente.</span></div>
+  </div>
+</footer>
+
+<div class="barra-fija">
+  <a class="btn btn-wa" href="https://wa.me/34640126543?text=Hola%2C%20mi%20ordenador%20..."><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.2 5 5 0 0 0 1.1 2.7 11.5 11.5 0 0 0 4.4 3.9c1.6.7 2.3.7 3.1.6a2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .2-1.2c-.1-.1-.3-.2-.5-.3z"></path></svg>WhatsApp</a>
+  <a class="btn btn-tel" href="tel:+34640126543"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"></path></svg>Llamar</a>
+</div>
+
+</body></html>
