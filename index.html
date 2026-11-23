@@ -153,6 +153,10 @@ summary { cursor: pointer; font-weight: 700; }
 details p { margin-top: 8px; color: var(--gris); }
 
 footer { padding-block: 34px; border-top: 1px solid var(--raya); color: var(--gris); font-size: .95rem; }
+.quien-grid { display: grid; gap: 28px; align-items: center; }
+.quien-grid > * { min-width: 0; }
+.retrato { width: 100%; max-width: 320px; height: auto; border-radius: 18px; justify-self: center; }
+@media (min-width: 760px) { .quien-grid { grid-template-columns: 300px 1fr; } }
 footer .caja { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
 footer b { color: var(--tinta); }
 footer .nota-visitas { display: block; margin-top: 8px; }
@@ -277,7 +281,8 @@ footer .nota-visitas { display: block; margin-top: 8px; }
   </section>
 
   <section id="quien">
-    <div class="caja">
+    <div class="caja quien-grid">
+      <img class="retrato" src="img/guillermo.webp" width="640" height="744" loading="lazy" alt="Guillermo, técnico de MedicoPC, con el polo de la marca">
       <div>
         <p class="antetitulo">Quién va a tu casa</p>
         <h2>Soy Guillermo. Trabajo solo.</h2>
